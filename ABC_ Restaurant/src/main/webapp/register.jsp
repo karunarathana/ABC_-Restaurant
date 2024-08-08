@@ -32,12 +32,13 @@
             <div class="page_body_main_wrapper">
                 <div class="body_content">
                     <div class="left_warpper">
+                    <form action="Register" method="post">
                         <h2>Create an your Account</h2>
                         <p>Fill your details Bellow</p>
                         <div class="left_warpper_user_input">
                             <div class="user_input_tems">
                                 <label for="">User Type</label>
-                                <select id="user">
+                                <select name="type" id="user">
                                     <option value="customer">Customer</option>
                                     <option value="broker">Broker</option>
                                     <option value="admin">Admin</option>
@@ -46,19 +47,19 @@
 
                             <div class="user_input_tems">
                                 <label for="">Email Address</label>
-                                <input type="text" placeholder="sandeepa@gmail.com">
+                                <input name="email" type="text" placeholder="sandeepa@gmail.com">
                             </div>
                             <div class="user_input_tems">
                                 <label for="">Phone Number</label>
-                                <input type="text" placeholder="+94">
+                                <input name="tel" type="text" placeholder="+94">
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Password</label>
-                                <input type="password" placeholder="Your Password">
+                                <input name="pass" type="password" placeholder="Your Password">
                             </div>
                             <div class="user_check_box">
-                                <input type="checkbox">
+                                <input name="agree" type="checkbox">
                                 <p>I agree to receive marketing, advertising and promotional information via email.</p>
                             </div>
                             <div class="user_input_tems redirect_loging_page">
@@ -66,8 +67,9 @@
                             </div>
                         </div>
                         <div class="footer_btn">
-                            <button>Register</button>
+                            <button type="submit">Register</button>
                         </div>
+                        </form>
                     </div>
                     <div class="right_warpper">
                         <img src="Assert/people-enjoying-mexican-barbecue.jpg" height="400" width="100%" alt="" srcset="">

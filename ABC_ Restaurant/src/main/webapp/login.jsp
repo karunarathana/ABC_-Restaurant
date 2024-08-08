@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
 <div class="login_main_wrapper">
@@ -69,7 +70,7 @@
                                 </div>
                             </div>
                             <div class="user_input_tems redirect_loging_page">
-                                <p>If you hav'nt account <a href="">register?</a></p>
+                                <p>If you hav'nt account <a href="register.jsp">register?</a></p>
                             </div>
                         </div>
                         <div class="footer_btn">
@@ -77,7 +78,7 @@
                         </div>
                     </div>
                     <div class="right_warpper">
-                        <img src="Image/delicious-lobster-gourmet-seafood.jpg" height="400" width="100%" alt="" srcset="">
+                        <img src="Assert/delicious-lobster-gourmet-seafood.jpg" height="400" width="100%" alt="" srcset="">
                     </div>
                 </div>
             </div>

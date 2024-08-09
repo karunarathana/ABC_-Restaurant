@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>register</title>
 <link rel="stylesheet" href="CSS/register.css">
+<script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 	 <div class="login_main_wrapper">
@@ -63,7 +64,7 @@
                                 <p>I agree to receive marketing, advertising and promotional information via email.</p>
                             </div>
                             <div class="user_input_tems redirect_loging_page">
-                                <p>If you have an account <a href="">Login?</a></p>
+                                <p>If you have an account <a href="login.jsp">Login?</a></p>
                             </div>
                         </div>
                         <div class="footer_btn">
@@ -72,7 +73,7 @@
                         </form>
                     </div>
                     <div class="right_warpper">
-                        <img src="Assert/people-enjoying-mexican-barbecue.jpg" height="400" width="100%" alt="" srcset="">
+                        <img src="Assert/people-enjoying-mexican-barbecue.jpg" height="400" width="100%" alt="" >
                     </div>
                 </div>
             </div>

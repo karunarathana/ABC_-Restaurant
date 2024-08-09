@@ -32,12 +32,13 @@
             <div class="page_body_main_wrapper">
                 <div class="body_content">
                     <div class="left_warpper">
+                      <form action="Login" method="get">
                         <h2>Login your Account</h2>
                         <p>Fill your details Bellow</p>
                         <div class="left_warpper_user_input">
                             <div class="user_input_tems">
                                 <label for="">Type</label>
-                                <select id="user">
+                                <select name="type" id="user">
                                     <option value="customer">Customer</option>
                                     <option value="broker">Broker</option>
                                     <option value="admin">Admin</option>
@@ -46,12 +47,12 @@
 
                             <div class="user_input_tems">
                                 <label for="">Email</label>
-                                <input type="text" placeholder="sandeepa@gmail.com">
+                                <input name="email" type="text" placeholder="sandeepa@gmail.com">
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Password</label>
-                                <input type="password" placeholder="Your Password">
+                                <input name="pass" type="password" placeholder="Your Password">
                             </div>
 
                             <div class="user_input_tems redirect_loging_page">
@@ -74,8 +75,9 @@
                             </div>
                         </div>
                         <div class="footer_btn">
-                            <button>Login</button>
+                            <button type="submit">Login</button>
                         </div>
+                        </form>
                     </div>
                     <div class="right_warpper">
                         <img src="Assert/delicious-lobster-gourmet-seafood.jpg" height="400" width="100%" alt="" srcset="">

@@ -56,7 +56,7 @@
                             </div>
 
                             <div class="user_input_tems redirect_loging_page">
-                                <p> <a href="">Froget Password?</a></p>
+                                <p> <a href="forgot.jsp">Froget Password?</a></p>
                             </div>
 
                             <div class="sign_in_method">

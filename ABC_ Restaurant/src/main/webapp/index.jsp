@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
+<input type="hidden" id="Response" value="<%=request.getAttribute("Response")%>">
 <div class="index_main_wrapper">
         <div class="hundred_percentage_view_fix">
             <div class="abc_header_section">

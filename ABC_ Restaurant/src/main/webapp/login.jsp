@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
+<input type="hidden" id="Response" value="<%=request.getAttribute("Response")%>">
 <div class="login_main_wrapper">
         <div class="header_section">
             <div class="abc_header_section">
@@ -34,6 +35,7 @@
                     <div class="left_warpper">
                       <form action="Login" method="get">
                         <h2>Login your Account</h2>
+                        <p>${Response}</p>
                         <p>Fill your details Bellow</p>
                         <div class="left_warpper_user_input">
                             <div class="user_input_tems">
@@ -75,7 +77,7 @@
                             </div>
                         </div>
                         <div class="footer_btn">
-                            <button type="submit">Login</button>
+                            <button type="submit" id="loginBtn">Login</button>
                         </div>
                         </form>
                     </div>
@@ -130,5 +132,27 @@
             </p>
         </div>
     </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer type="text/javascript">
+    	var message = document.getElementById("Response").value;
+    	const loginBtn = document.getElementById("loginBtn");
+    	loginBtn.addEventListener("click",()=>{
+    		console.log(message);
+        	if(message == "faild"){
+        		Swal.fire({
+        			  icon: "error",
+        			  title: "Oops...",
+        			  text: "Something went wrong!",
+        			  footer: '<a href="#">Why do I have this issue?</a>'
+        			});
+        	}else{
+        		Swal.fire({
+        			  title: "Good job!",
+        			  text: "You clicked the button!",
+        			  icon: "success"
+        			});
+        	}
+    	});
+    </script>
 </body>
 </html>

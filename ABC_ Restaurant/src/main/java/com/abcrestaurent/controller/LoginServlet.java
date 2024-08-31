@@ -1,5 +1,6 @@
 package com.abcrestaurent.controller;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -31,11 +32,23 @@ public class LoginServlet extends HttpServlet {
 		String userType = request.getParameter("type");
 		String userEmail = request.getParameter("email");
 		String userPass = request.getParameter("pass");
+		RequestDispatcher dispatcher = null;
 		System.out.println("Username " + userEmail + " and" + " Password " + userPass +"UserType"+userType);
 		
 		//call the login service class
 		loginDTO = new LoginDTO(userType,userEmail,userPass);
 		String responseBody = loginService.validateUser(loginDTO);
+		
+		if(responseBody.equals("Login SuccessFully")) {
+			request.setAttribute("Response", "success");
+			dispatcher = request.getRequestDispatcher("index.jsp");
+			
+		}else {
+			request.setAttribute("Response", "faild");
+			dispatcher = request.getRequestDispatcher("login.jsp");
+			
+		}
+		dispatcher.forward(request, response);
 		System.out.println(responseBody);
 	}
 

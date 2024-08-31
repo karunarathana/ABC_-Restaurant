@@ -1,0 +1,294 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_wrapper_broker_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100Vh;
+    background-color: rgb(222, 231, 242);
+}
+.body_container_main_wrapper{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 34.3em;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.letf_warpper{
+    width: 20%;
+    border-right: 2px solid rgb(172, 159, 159);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left_wrapper_content{
+    width: 90%;
+    height: 90%;
+}
+.left_nav_bar{
+    margin-top: 50px;
+    height: 18em;
+}
+.left_nav_bar_items{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 3em;
+    margin-top: 10px;
+}
+.left_nav_bar_items:hover{
+    border-left: 4px solid rgb(4, 4, 4);
+}
+.left_nav_bar_items p{
+    font-size: 1.2rem;
+    width: 5em;
+}
+.user_profile_image_main_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user_profile_image_main_wrapper p{
+    margin-top: -15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.user_profile_image{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 4.5em;
+    height: 4em;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    background: url(../Assert/WhatsApp\ Image\ 2023-10-31\ at\ 07.47.43_6ad4ee28.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.online_indicator{
+    position: relative;
+    top:-15px;
+    left: 25px;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    background-color: rgb(5, 168, 5);
+}
+
+
+.middle_wrapper{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 20px;
+    width: 100%;    
+    height: 100%;
+}
+.middle_wraper_container{
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+.special_div{
+    width: 75%;
+}
+.header_text h2{
+    font-size: 2.1rem;
+}
+.header_text p{
+    font-size: 1.1rem;
+}
+.first_indicator{
+    width: 90%;
+    height: 11em;
+    background-color: rgb(7, 7, 7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px auto;
+    
+}
+.first_indicator img{
+    border-radius: 10px;
+}
+.second_indicator{
+    width: 90%;
+    height: 16.7em;
+    margin: 22px auto;
+}
+.second_mo1{
+    display: flex;
+    gap: 10px;
+    
+}
+.mo1_items{
+    width: 50%;
+    height: 7.5em;
+    border-radius: 10px;
+}
+.mo2_item1{
+    background-color: rgb(247, 189, 189);
+}
+.mo2_item2{
+    background-color: rgb(246, 244, 183);
+}
+.mo2_item3{
+    background-color: rgb(206, 241, 145);
+    margin-top: 10px;
+}
+.mo2_item4{
+    margin-top: 10px;
+    background-color: rgb(145, 196, 241);
+}
+
+
+.m_payment{
+    display: none ;
+}
+.reservation{
+    display: none;
+}
+.setting{
+    display: none;
+}
+.right_wrapper{
+    margin-top: 20px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 25%;
+    height: 100%;
+}
+.right_wrapper_indicator{
+    padding: 10px;
+    width: 90%;
+    height: 31em;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(15, 15, 15);
+}
+#h001{
+    text-align: center;
+    color: rgb(226, 8, 8);
+}
+.home{
+    display: flex;
+}
+.no_brach{
+    margin-top: 10px;
+}
+.no_brach h3{
+    font-size: 1.5rem;
+    margin-left:30px ;
+    color: rgb(181, 193, 193);
+}
+.add_im{
+    margin-top: 15px;
+}
+#customers {
+    overflow-y: scroll;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    height: 2em;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  .add_branches_compo{
+    margin-top: 15px;
+    padding: 20px;
+    height: 10em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .add_branches_compo p{
+    color: #04AA6D;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 10px
+  }
+  .add_branches_compo form input{
+    padding-left:15px;
+    border: 1px solid rgb(95, 93, 93);
+    border-radius: 2px;
+    height: 2.5em;
+    outline: none;
+    width: 15em;
+  }
+.add_branches_compo form input:focus{
+    border: 2px solid #04AA6D;
+}
+  .sub_comp{
+    margin-top: 10px;
+  }
+  .sub_comp button{
+    background-color: rgb(74, 125, 254);
+    border-radius: 20px;
+    border: none;
+    height: 2.5em;
+    width: 15%;
+  }
+  #del_btn{
+    background-color: #d1330b;
+    border: none;
+    color: white;
+    height: 2em;
+    width: 45%;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #edi_btn{
+    background-color: #15b60a;
+    border: none;
+    color: white;
+    height: 2em;
+    width: 45%;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .c_user_component{
+    margin-top: 20px;
+  }
+  .c_user_component form input:focus{
+    border: 2px solid #04AA6D;
+}
+  .c_user_component input{
+    padding-left:15px;
+    border: 1px solid rgb(95, 93, 93);
+    border-radius: 2px;
+    height: 2.5em;
+    outline: none;
+    width: 18em;
+  }
+  .c_user_component button{
+    background-color: rgb(74, 125, 254);
+    border-radius: 20px;
+    border: none;
+    height: 2.5em;
+    width: 15%;
+  }

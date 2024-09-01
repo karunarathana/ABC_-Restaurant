@@ -9,6 +9,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
+	<input type="hidden" id="Response" value="<%=request.getAttribute("ErrorResponse")%>">
 	 <div class="login_main_wrapper">
         <div class="header_section">
             <div class="abc_header_section">
@@ -40,22 +41,23 @@
                             <div class="user_input_tems">
                                 <label for="">User Type</label>
                                 <select name="type" id="user">
+                               		<option value="plsselect">Please Select User Type</option>
                                     <option value="customer">Customer</option>
                                 </select>
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Email Address</label>
-                                <input name="email" type="text" placeholder="sandeepa@gmail.com">
+                                <input id="uEmail" name="email" type="text" placeholder="sandeepa@gmail.com">
                             </div>
                             <div class="user_input_tems">
                                 <label for="">Phone Number</label>
-                                <input name="tel" type="text" placeholder="+94">
+                                <input id="utel" name="tel" type="text" placeholder="+94">
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Password</label>
-                                <input name="pass" type="password" placeholder="Your Password">
+                                <input id="uPass" name="pass" type="password" placeholder="Your Password">
                             </div>
                             <div class="user_check_box">
                                 <input name="agree" type="checkbox">
@@ -121,5 +123,63 @@
             </p>
         </div>
     </div>
+     <!-- Popup Container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h3>Popup Message</h3>
+            <p>This is a simple popup message. You can put any content here.</p>
+        </div>
+    </div>
+    <script>
+    	let result = null;
+   	 	let message = document.getElementById("Response").value;
+   	 	
+   		// Get the popup element
+   	 	var popup = document.getElementById("popup");
+
+   	 	// Get the button that opens the popup
+   	 	var popupBtn = document.getElementById("popupBtn");
+
+   	 	// Get the <span> element that closes the popup
+   	 	var closeBtn = document.getElementsByClassName("close")[0];
+
+   		 // When the user clicks the button, open the popup
+   		 popupBtn.onclick = function() {
+   	   	  popup.style.display = "block";
+   	 	}
+
+   	 	// When the user clicks on <span> (x), close the popup
+   		 closeBtn.onclick = function() {
+   	     	popup.style.display = "none";
+   		 }
+
+   		 // When the user clicks anywhere outside of the popup, close it
+   		 window.onclick = function(event) {
+   	     	if (event.target == popup) {
+   	     	    popup.style.display = "none";
+   	     	}
+   	 	}
+
+   	 	
+   	 	
+   		if(!message.length == 0){
+	 		if(message.includes("User type is required.")){
+	 			document.getElementById("user").style.border = "1px solid red";
+	 		}
+	 		if(message.includes("phone number is required.")){
+	 			document.getElementById("utel").style.border = "1px solid red";
+	 		}
+	 		if(message.includes("Invalid email format.")){
+	 			document.getElementById("uEmail").style.border = "1px solid red";
+	 		}
+	 		if(message.includes("Password is required.")){
+	 			document.getElementById("uPass").style.border = "1px solid red";
+	 		}
+	 		if(message.includes("Registration Successfully")){
+	 			 popup.style.display = "block";
+	 		}
+	 	}
+    </script>
 </body>
 </html>

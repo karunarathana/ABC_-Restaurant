@@ -24,7 +24,7 @@
                         <div class="left_nav_bar_items" id="m_payment_btn">
                             <div>
                                 <img src="Assert/project-management.png" width="25" height="25" alt=""
-                                    srcset="" />
+                                     />
                             </div>
                             <p>Customers</p>
                         </div>
@@ -176,9 +176,9 @@
                     <div class="add_branches_compo">
                         <p>Add Branches</p>
                         <form action="">
-                            <input type="text" name="" id="" placeholder="Resturent City">
-                            <input type="password" name="" id="" placeholder="Password">
-                            <input type="text" name="" id="" placeholder="Contact Info">
+                            <input type="text" name=""  placeholder="Resturent City">
+                            <input type="password" name=""  placeholder="Password">
+                            <input type="text" name="" placeholder="Contact Info">
                             <div class="sub_comp">
                                <button>Add</button>
                             </div>

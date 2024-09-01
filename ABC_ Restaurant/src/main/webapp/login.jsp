@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="CSS/test.css">
 </head>
 <body>
-<input type="hidden" id="Response" value="<%=request.getAttribute("Response")%>">
+<input type="hidden" id="loginresponse" value="<%=request.getAttribute("ErrorResponse")%>">
 <div class="login_main_wrapper">
         <div class="header_section">
             <div class="abc_header_section">
@@ -35,7 +35,6 @@
                     <div class="left_warpper">
                       <form action="Login" method="get">
                         <h2>Login your Account</h2>
-                       <button id="popupBtn">Open Popup</button>
                         <p>Fill your details Bellow</p>
                         <div class="left_warpper_user_input">
                             <div class="user_input_tems">
@@ -49,12 +48,12 @@
 
                             <div class="user_input_tems">
                                 <label for="">Email</label>
-                                <input name="email" type="text" placeholder="sandeepa@gmail.com">
+                                <input id="uEmail" name="email" type="text" placeholder="sandeepa@gmail.com">
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Password</label>
-                                <input name="pass" type="password" placeholder="Your Password">
+                                <input id="uPass" name="pass" type="password" placeholder="Your Password">
                             </div>
 
                             <div class="user_input_tems redirect_loging_page">
@@ -140,49 +139,24 @@
             <p>This is a simple popup message. You can put any content here.</p>
         </div>
     </div>
-    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script defer type="text/javascript">
-    var popup = document.getElementById("popup");
-    	var message = document.getElementById("Response").value;
-    	const loginBtn = document.getElementById("loginBtn");
-    	loginBtn.addEventListener("click",()=>{
-    		console.log(message);
-        	if(message == "faild"){
-        		popup.style.display = "block";
-        	}else{
-        		Swal.fire({
-        			  title: "Good job!",
-        			  text: "You clicked the button!",
-        			  icon: "success"
-        			});
-        	}
-    	});
-    	// Get the popup element
-    	var popup = document.getElementById("popup");
+    <script>
+	 	let message = document.getElementById("loginresponse").value;
 
-    	// Get the button that opens the popup
-    	var popupBtn = document.getElementById("popupBtn");
-
-    	// Get the <span> element that closes the popup
-    	var closeBtn = document.getElementsByClassName("close")[0];
-
-    	// When the user clicks the button, open the popup
-    	popupBtn.onclick = function() {
-    	    popup.style.display = "block";
-    	}
-
-    	// When the user clicks on <span> (x), close the popup
-    	closeBtn.onclick = function() {
-    	    popup.style.display = "none";
-    	}
-
-    	// When the user clicks anywhere outside of the popup, close it
-    	window.onclick = function(event) {
-    	    if (event.target == popup) {
-    	        popup.style.display = "none";
-    	    }
-    	}
-
+	 	console.log("out put"+message);
+		if(!message.length == 0){
+ 		if(message.includes(" User type is required.")){
+ 			document.getElementById("user").style.border = "1px solid red";
+ 		}
+ 		if(message.includes(" Invalid email format.")){
+ 			document.getElementById("uEmail").style.border = "1px solid red";
+ 		}
+ 		if(message.includes(" Password is required.")){
+ 			document.getElementById("uPass").style.border = "1px solid red";
+ 		}
+ 		if(message.includes("Login SuccessFully")){
+			console.log("Login Success")
+ 		}
+ 	}
     </script>
 </body>
 </html>

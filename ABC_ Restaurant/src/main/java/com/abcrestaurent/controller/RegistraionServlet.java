@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 import com.abcrestaurent.dto.RegisterDTO;
 import com.abcrestaurent.service.RegisterService;
@@ -45,7 +46,14 @@ public class RegistraionServlet extends HttpServlet {
 		registerDTO = new RegisterDTO(userType,userEmail,userTel,userPass,agree);
 		
 		//call the registerService class
-		String responseMessage = registerService.registerUser(registerDTO);
+		List<String> responseMessage = registerService.registerUser(registerDTO);
+		if(responseMessage.get(0) == "Status Error") {
+			request.setAttribute("ErrorResponse", responseMessage);
+		    request.getRequestDispatcher("register.jsp").forward(request, response);
+		}else {
+			 request.getRequestDispatcher("login.jsp").forward(request, response);
+		}
+		
 		System.out.println(responseMessage);
 	}
 

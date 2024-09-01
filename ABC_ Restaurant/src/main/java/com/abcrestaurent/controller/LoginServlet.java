@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 import com.abcrestaurent.dto.LoginDTO;
 import com.abcrestaurent.service.LoginService;
@@ -32,23 +33,44 @@ public class LoginServlet extends HttpServlet {
 		String userType = request.getParameter("type");
 		String userEmail = request.getParameter("email");
 		String userPass = request.getParameter("pass");
-		RequestDispatcher dispatcher = null;
-		System.out.println("Username " + userEmail + " and" + " Password " + userPass +"UserType"+userType);
+	
 		
 		//call the login service class
 		loginDTO = new LoginDTO(userType,userEmail,userPass);
-		String responseBody = loginService.validateUser(loginDTO);
+		List<String> responseBody = loginService.validateUser(loginDTO);
 		
-		if(responseBody.equals("Login SuccessFully")) {
-			request.setAttribute("Response", "success");
-			dispatcher = request.getRequestDispatcher("index.jsp");
-			
+		if(responseBody.get(0) == "Status Error") {
+			request.setAttribute("ErrorResponse", responseBody);
+		    request.getRequestDispatcher("login.jsp").forward(request, response);
 		}else {
-			request.setAttribute("Response", "faild");
-			dispatcher = request.getRequestDispatcher("login.jsp");
-			
+			if(responseBody.get(0) == "Login SuccessFully") {
+				
+				switch (userType) {
+			    case "customer":
+			    	request.setAttribute("ErrorResponse", responseBody);
+			    	request.getRequestDispatcher("index.jsp").forward(request, response);
+			        break;
+				case "admin":
+					request.setAttribute("ErrorResponse", "DOne");
+					request.getRequestDispatcher("admin.jsp").forward(request, response);	        
+					break;
+				case "branch":
+					request.setAttribute("ErrorResponse", responseBody);
+					request.getRequestDispatcher("branch.jsp").forward(request, response);
+				    break;
+
+			    default:
+			    	System.out.println("User Type Not Defined Please try again");
+			        break;
+				}
+				
+			}else {
+				request.setAttribute("ErrorResponse", responseBody);
+			    request.getRequestDispatcher("login.jsp").forward(request, response);
+			}
+
 		}
-		dispatcher.forward(request, response);
+		
 		System.out.println(responseBody);
 	}
 

@@ -32,7 +32,7 @@
                             <div>
                                 <img src="Assert/support.png" width="25" height="25" alt="" srcset="" />
                             </div>
-                            <p>Braches</p>
+                            <p>Branches</p>
                         </div>
                         <div class="left_nav_bar_items" id="set_btn">
                             <div>

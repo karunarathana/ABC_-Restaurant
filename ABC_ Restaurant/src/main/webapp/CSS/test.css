@@ -148,7 +148,7 @@
 .left_warpper_user_input select{
     padding-left: 10px;
     width: 60%;
-    height: 2em;
+    height: 2.5em;
     font-weight: bold;
     color: rgb(100, 101, 101);
     font-size: 1rem;
@@ -357,3 +357,42 @@
     background-color: black;
 }
 /* This is End Footer component */
+
+
+
+/* Style for the popup overlay */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Popup content */
+.popup-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}

@@ -21,6 +21,9 @@ public class RegisterService {
 		String response = regiterRepo.saveUser(registerModel);
 		return response;
 	}
+	public void sendEmailToTheUser() {
+		System.out.println("Email Sed to the user");
+	}
 
 
 }

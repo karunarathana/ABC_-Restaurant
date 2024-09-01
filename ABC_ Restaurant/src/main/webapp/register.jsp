@@ -6,16 +6,17 @@
 <meta charset="UTF-8">
 <title>register</title>
 <link rel="stylesheet" href="CSS/register.css">
+<script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 	 <div class="login_main_wrapper">
         <div class="header_section">
             <div class="abc_header_section">
                 <div class="abc_header_section_left">
-                    <a href="">Welcome</a>
-                    <a href="">Product</a>
-                    <a href="">Our Menu</a>
-                    <a href="">Offer</a>
+                    <a href="index.jsp">Overview</a>
+		            <a href="gallery.jsp">Gallery</a>
+		            <a href="offer.jsp">Offers</a>
+		            <a href="facilities.jsp">Facilities</a>
                 </div>
                 <div class="abc_header_section_middle">
                     <img src="Assert/Group.svg" width="40" height="40" alt="LOGO" />
@@ -40,8 +41,6 @@
                                 <label for="">User Type</label>
                                 <select name="type" id="user">
                                     <option value="customer">Customer</option>
-                                    <option value="broker">Broker</option>
-                                    <option value="admin">Admin</option>
                                 </select>
                             </div>
 
@@ -63,7 +62,7 @@
                                 <p>I agree to receive marketing, advertising and promotional information via email.</p>
                             </div>
                             <div class="user_input_tems redirect_loging_page">
-                                <p>If you have an account <a href="">Login?</a></p>
+                                <p>If you have an account <a href="login.jsp">Login?</a></p>
                             </div>
                         </div>
                         <div class="footer_btn">
@@ -72,7 +71,7 @@
                         </form>
                     </div>
                     <div class="right_warpper">
-                        <img src="Assert/people-enjoying-mexican-barbecue.jpg" height="400" width="100%" alt="" srcset="">
+                        <img src="Assert/people-enjoying-mexican-barbecue.jpg" height="400" width="100%" alt="" >
                     </div>
                 </div>
             </div>

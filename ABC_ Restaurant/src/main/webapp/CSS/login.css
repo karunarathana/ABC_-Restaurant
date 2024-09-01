@@ -127,7 +127,6 @@
     padding-left: 10px;
     width: 60%;
     height: 2.5em;
-    font-weight: bold;
     color: rgb(100, 101, 101);
     font-size: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -149,7 +148,7 @@
 .left_warpper_user_input select{
     padding-left: 10px;
     width: 60%;
-    height: 2.5em;
+    height: 2em;
     font-weight: bold;
     color: rgb(100, 101, 101);
     font-size: 1rem;
@@ -353,7 +352,6 @@
 }
 
 #copyright_2{
-    margin-top: 10px;
     color: white;
     text-align: center;
     background-color: black;

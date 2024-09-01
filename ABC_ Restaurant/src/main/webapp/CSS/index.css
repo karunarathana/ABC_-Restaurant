@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *{
     margin: 0;
     padding: 0;
@@ -75,23 +74,26 @@ body{
 .abc_hero_section{
     padding: 90px 0 0 65px;
     display: flex;
-    gap: 1em;
+    gap: 0.5em;
     flex-direction: column;
-    background: url(Image/mixed-food-black-tea-table.jpg);
+    background: url(../Assert/juicy-cheeseburger-wooden-cutting-board.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0.7;
     height: 90vh;
 }
 .abc_hero_section h1{
-    color: rgb(226, 7, 7);
+    color: rgb(255, 255, 255);
     font-size: 3rem;
 }
 .abc_hero_section p{
     width: 50%;
-    color: white;
+    color: rgb(253, 252, 252);
 }
 .abc_hero_section_order_btn button{
+    margin-top: 30px;
+    background-color: yellow;
     border: none;
     width: 15%;
     padding: 1em;
@@ -101,6 +103,21 @@ body{
     font-weight: bold;
     transition: 1000ms;
     cursor: pointer;
+}
+.cus_round_component{
+    position: absolute;
+    top: 20em;
+    left: 68%;
+    border: 5px solid rgb(255, 255, 7);
+    width: 21em;
+    border-radius: 50%;
+    height: 16em;
+    background: url(../Assert/Mask\ group.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: rgb(255, 4, 71);
+    opacity: 0.8;
 }
 
 
@@ -157,6 +174,7 @@ body{
     text-align: center;
 }
 .second_section_card_view_services_button button{
+    margin-top: 20px;
     border: none;
     width: 15%;
     padding: 1em;
@@ -204,8 +222,7 @@ body{
 /* 
 This is fouth section styleing */
 .fourth_section_main_wrapper{
-    height: 25em;
-    background-color: rgb(246, 230, 199);
+    height: 28em;
 }
 .fourth_section_main_wrapper h2{
     text-align: center;
@@ -325,6 +342,10 @@ This is five section styleing */
     background-color: #ffffff;
 }
 /* Our team style css. */
+.six_main_wrapper h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
 .our_team_main_wrapper{
     padding-top:20px;
     height: 28em;
@@ -366,6 +387,15 @@ This is five section styleing */
     border-bottom: 5px solid red;
     border-right: 5px solid red;
 }
+.test2 h3{
+    font-size: 1.8rem;
+    color: red;
+}
+.test2 p{
+    font-size: 1.5rem;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+}
 
 /*End our team style css. */
 
@@ -383,19 +413,20 @@ This is five section styleing */
     height: 40em;
 }
 .populur_dishes_compoonent_main_wrapper h2{
-    color: white;
+    color: rgb(245, 245, 245);
     text-align: center;
     font-size: 2.3rem;
 }
 .populur_dishes_compoonent_main_wrapper p{
-    color: white;
-    text-align: center;
+    color: rgb(0, 0, 0);
     width: 65%;
-    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
 }
 .m002{
     background-color: antiquewhite;
-    height: 30em;
+    height: 29em;
 }
 .pupular_dish_container{
     display: flex;
@@ -406,49 +437,92 @@ This is five section styleing */
 }
 .pupular_dish_items{
     width: 30%;
-    height: 20em;
+    height: 21em;
     border-radius: 10px;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.pupular_dish_items img{
+    border-radius: 10px 10px 10px 0;
+}
+.pupular_dish_items_footer{
+    margin-top: 15px;
+    display: flex;
+}
+.pupular_dish_items_footer p:last-child{
+    text-align: center;
+    color: #FA7436;
+}
+.pupular_dish_items button{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    width: 7em;
+    height: 2em;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid black;
+}
 /* This end popular dish main wrapper */
 
 
 /* This is company story main wrapper */
-.camany_story_main_wrapper{
+.reservation_main_compo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px 0 20px 0;
     height: 22em;
-    background-color: rgb(201, 217, 196);
-}
-.story_sub_wrapper{
-   display: flex;
-   height: 100%;
-}
-.left_sub_item_story{
-    height: 100%;
-    width: 50%;
-    background: url("Image/happy-waiter-serving-food-group-cheerful-friends-pub.jpg");
-    background-size: contain;
-    background-position: center;
+    background-color: rgb(199, 199, 199);
+    background: url("../Assert/Section\ \(1\).png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
-.right_sub_item{
-    border-left: 3px solid black;
-    padding-left: 20px;
-    height: 100%;
-    width: 50%;
+.container h2{
+    font-size: 2rem;
+    color: white;
 }
-.right_sub_container{
+.container p{
+    font-size: 1.1rem;
+    color: white;
+}
+.container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: rgb(249, 57, 89);
+}
+.f_user_input{
     margin-top: 10px;
 }
-.rigth_sub_item{
-    width: 50%;
+.f_user_input input{
+    height: 2.5em;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.r_submit_btn{
+    margin-top: 20px;
+    text-align: end;
+}
+#r_sub_btn{
+    border: none;
+    padding: 0.8em;
+    width: 30%;
+    background-color: yellow;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+
 }
 /* This end company story main wrapper */
-
-
-
 
 
 
@@ -605,3 +679,170 @@ This is five section styleing */
     background-repeat: no-repeat; */
 }
 /* End custom style */
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+    background-color: #dddbda;
+}
+.location_component{
+    height: 25em;
+    width: 90%;
+    border: 3px solid rgb(240, 6, 6);
+    border-radius: 20px;
+}
+.location_component iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+/* <!-- What people say about Us. */
+.what_pepole_say_abouth_main_wrapper{
+    background-color: #dddbda;
+    padding: 50px 0 50px 0;
+}
+.what_pepole_say_abouth_main_left_component h2{
+    font-size: 2.5rem;
+}
+.what_pepole_say_abouth_main_left_component p{
+    font-size: 1.5rem;
+}
+#end_text_color{
+    color: #FA7436;
+}
+.what_pepole_say_abouth_main_component{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+.what_pepole_say_abouth_main_left_component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    height: 20em;
+}
+.what_pepole_say_abouth_main_right_component{
+    width: 50%;
+    height: 20em;
+}
+.next_privew_btn_component{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.user_profile_photo{
+    position: relative;
+    margin-top: -15px;
+    margin-left: -25px;
+    margin-bottom: 10px;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100px;
+    border: 1px solid rgb(246, 87, 38);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.user_comment_main_wrapper{
+    background-color: rgb(226, 228, 228);
+    z-index: 2;
+    padding-left: 10px;
+    width: 80%;
+    height: 12em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.user_comment_main_wrapper h5{
+    margin-top: 15px;
+}
+.second_user_comment_main_wrapper h5{
+    margin-top: 135px;
+}
+.second_user_comment_main_wrapper{
+    position: relative;
+    z-index: 1;
+    opacity: 0.5;
+    padding-left: 10px;
+    top: -120px;
+    left: 30px;
+    width: 80%;
+    height: 12em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.what_pepole_say_abouth_main_right_component_s02{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services_compo{
+    background-color: #ffffff;
+}
+.services_img1{
+    height: 12em;
+    background: url("../Assert/142.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.services_img2{
+    height: 12em;
+    background: url("../Assert/3544858.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.services_img3{
+    height: 12em;
+    background: url("../Assert/4016257.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.services_compo p{
+    padding: 0 10px 0 10px;
+    width: 100%;
+    text-align: center;
+    color: #5a5757;
+    font-size: 1.1rem;
+}
+.services_compo h3{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #000000;
+}
+
+.container_f_user_input{
+    display: flex;
+    justify-content: space-between;
+}
+.date_time_inputes input{
+    width: 13.4em;
+}
+.next_privew_btn_component{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.next_privew_btn_component button{
+    border: none;
+    padding: 0.8em;
+    width: 30%;
+    background-color: rgb(244, 117, 32);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.user_profile_photo{
+    background: url("../Assert/4016257.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

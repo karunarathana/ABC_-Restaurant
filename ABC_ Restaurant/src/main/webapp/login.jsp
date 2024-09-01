@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="CSS/login.css">
+<title>Login</title>
+<link rel="stylesheet" href="CSS/test.css">
 </head>
 <body>
+<input type="hidden" id="Response" value="<%=request.getAttribute("Response")%>">
 <div class="login_main_wrapper">
         <div class="header_section">
             <div class="abc_header_section">
@@ -32,41 +33,43 @@
             <div class="page_body_main_wrapper">
                 <div class="body_content">
                     <div class="left_warpper">
+                      <form action="Login" method="get">
                         <h2>Login your Account</h2>
+                       <button id="popupBtn">Open Popup</button>
                         <p>Fill your details Bellow</p>
                         <div class="left_warpper_user_input">
                             <div class="user_input_tems">
                                 <label for="">Type</label>
-                                <select id="user">
+                                <select name="type" id="user">
                                     <option value="customer">Customer</option>
-                                    <option value="broker">Broker</option>
                                     <option value="admin">Admin</option>
+                                    <option value="branch">Branch</option>
                                 </select>
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Email</label>
-                                <input type="text" placeholder="sandeepa@gmail.com">
+                                <input name="email" type="text" placeholder="sandeepa@gmail.com">
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Password</label>
-                                <input type="password" placeholder="Your Password">
+                                <input name="pass" type="password" placeholder="Your Password">
                             </div>
 
                             <div class="user_input_tems redirect_loging_page">
-                                <p> <a href="">Froget Password?</a></p>
+                                <p> <a href="forgot.jsp">Froget Password?</a></p>
                             </div>
 
                             <div class="sign_in_method">
                                 <div class="sign_in_method_icons sitem1">
-                                    <img src="Assert/Login/social.png" alt="" width="36" height="36" srcset="">
+                                    <img src="Assert/facebook.png" alt="" width="100%" height="100%" >
                                 </div>
                                 <div class="sign_in_method_icons">
-                                    <img src="Assert/Login/facebook.png" alt="" width="36" height="36" srcset="">
+                                    <img src="Assert/social.png" alt="" width="100%" height="100%" >
                                 </div>
                                 <div class="sign_in_method_icons">
-                                    <img src="Assert/Login/apple.png" alt="" width="36" height="36" srcset="">
+                                    <img src="Assert/icloud.png" alt="" width="100%" height="100%">
                                 </div>
                             </div>
                             <div class="user_input_tems redirect_loging_page">
@@ -74,8 +77,9 @@
                             </div>
                         </div>
                         <div class="footer_btn">
-                            <button>Login</button>
+                            <button type="submit" id="loginBtn">Login</button>
                         </div>
+                        </form>
                     </div>
                     <div class="right_warpper">
                         <img src="Assert/delicious-lobster-gourmet-seafood.jpg" height="400" width="100%" alt="" srcset="">
@@ -128,5 +132,57 @@
             </p>
         </div>
     </div>
+     <!-- Popup Container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h3>Popup Message</h3>
+            <p>This is a simple popup message. You can put any content here.</p>
+        </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer type="text/javascript">
+    var popup = document.getElementById("popup");
+    	var message = document.getElementById("Response").value;
+    	const loginBtn = document.getElementById("loginBtn");
+    	loginBtn.addEventListener("click",()=>{
+    		console.log(message);
+        	if(message == "faild"){
+        		popup.style.display = "block";
+        	}else{
+        		Swal.fire({
+        			  title: "Good job!",
+        			  text: "You clicked the button!",
+        			  icon: "success"
+        			});
+        	}
+    	});
+    	// Get the popup element
+    	var popup = document.getElementById("popup");
+
+    	// Get the button that opens the popup
+    	var popupBtn = document.getElementById("popupBtn");
+
+    	// Get the <span> element that closes the popup
+    	var closeBtn = document.getElementsByClassName("close")[0];
+
+    	// When the user clicks the button, open the popup
+    	popupBtn.onclick = function() {
+    	    popup.style.display = "block";
+    	}
+
+    	// When the user clicks on <span> (x), close the popup
+    	closeBtn.onclick = function() {
+    	    popup.style.display = "none";
+    	}
+
+    	// When the user clicks anywhere outside of the popup, close it
+    	window.onclick = function(event) {
+    	    if (event.target == popup) {
+    	        popup.style.display = "none";
+    	    }
+    	}
+
+    </script>
 </body>
 </html>

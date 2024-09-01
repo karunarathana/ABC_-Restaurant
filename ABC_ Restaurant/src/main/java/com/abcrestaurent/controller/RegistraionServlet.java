@@ -13,7 +13,15 @@ import com.abcrestaurent.service.RegisterService;
 
 @WebServlet("/Register")
 
+/**
+ * This is the controller class which helps to handle login request
+ * @author Nipun Sandeepa Karunarathana
+ * @since  2024/08/09
+ * @version 1.0
+ */
+
 public class RegistraionServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
 	
 	private RegisterService registerService = new RegisterService();
 	private RegisterDTO registerDTO;

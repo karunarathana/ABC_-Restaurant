@@ -76,7 +76,7 @@ body{
     display: flex;
     gap: 0.5em;
     flex-direction: column;
-    background: url(Image/juicy-cheeseburger-wooden-cutting-board.jpg);
+    background: url(../Assert/juicy-cheeseburger-wooden-cutting-board.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -112,10 +112,11 @@ body{
     width: 21em;
     border-radius: 50%;
     height: 16em;
-    background: url(Image/delicious-lobster-gourmet-seafood.jpg);
+    background: url(../Assert/Mask\ group.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-color: rgb(255, 4, 71);
     opacity: 0.8;
 }
 
@@ -173,6 +174,7 @@ body{
     text-align: center;
 }
 .second_section_card_view_services_button button{
+    margin-top: 20px;
     border: none;
     width: 15%;
     padding: 1em;
@@ -411,19 +413,20 @@ This is five section styleing */
     height: 40em;
 }
 .populur_dishes_compoonent_main_wrapper h2{
-    color: white;
+    color: rgb(245, 245, 245);
     text-align: center;
     font-size: 2.3rem;
 }
 .populur_dishes_compoonent_main_wrapper p{
-    color: white;
-    text-align: center;
+    color: rgb(0, 0, 0);
     width: 65%;
-    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
 }
 .m002{
     background-color: antiquewhite;
-    height: 30em;
+    height: 29em;
 }
 .pupular_dish_container{
     display: flex;
@@ -434,11 +437,34 @@ This is five section styleing */
 }
 .pupular_dish_items{
     width: 30%;
-    height: 20em;
+    height: 21em;
     border-radius: 10px;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.pupular_dish_items img{
+    border-radius: 10px 10px 10px 0;
+}
+.pupular_dish_items_footer{
+    margin-top: 15px;
+    display: flex;
+}
+.pupular_dish_items_footer p:last-child{
+    text-align: center;
+    color: #FA7436;
+}
+.pupular_dish_items button{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    width: 7em;
+    height: 2em;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid black;
+}
 /* This end popular dish main wrapper */
 
 
@@ -450,6 +476,9 @@ This is five section styleing */
     padding: 20px 0 20px 0;
     height: 22em;
     background-color: rgb(199, 199, 199);
+    background: url("../Assert/Section\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container h2{
     font-size: 2rem;
@@ -716,7 +745,6 @@ This is five section styleing */
     height: 2.5em;
     border-radius: 100px;
     border: 1px solid rgb(246, 87, 38);
-    background: url("Assert/Broker/WhatsApp\ Image\ 2023-10-31\ at\ 07.47.43_6ad4ee28.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -753,4 +781,68 @@ This is five section styleing */
     flex-direction: column;
     align-items: center;
 }
+.services_compo{
+    background-color: #ffffff;
+}
+.services_img1{
+    height: 12em;
+    background: url("../Assert/142.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.services_img2{
+    height: 12em;
+    background: url("../Assert/3544858.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.services_img3{
+    height: 12em;
+    background: url("../Assert/4016257.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.services_compo p{
+    padding: 0 10px 0 10px;
+    width: 100%;
+    text-align: center;
+    color: #5a5757;
+    font-size: 1.1rem;
+}
+.services_compo h3{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #000000;
+}
 
+.container_f_user_input{
+    display: flex;
+    justify-content: space-between;
+}
+.date_time_inputes input{
+    width: 13.4em;
+}
+.next_privew_btn_component{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.next_privew_btn_component button{
+    border: none;
+    padding: 0.8em;
+    width: 30%;
+    background-color: rgb(244, 117, 32);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.user_profile_photo{
+    background: url("../Assert/4016257.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

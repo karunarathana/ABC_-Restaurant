@@ -8,23 +8,24 @@
 <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
+	
 	<div class="index_main_wrapper">
       <div class="hundred_percentage_view_fix">
         <div class="abc_header_section">
           <div class="abc_header_section_left">
-            <a href="">Overview</a>
-            <a href="">Gallery</a>
-            <a href="offer.html">Offers</a>
-            <a href="">Facilities</a>
+            <a href="index.jsp">Overview</a>
+            <a href="gallery.jsp">Gallery</a>
+            <a href="offer.jsp">Offers</a>
+            <a href="facilities">Facilities</a>
           </div>
           <div class="abc_header_section_middle">
-            <img src="Image/Group.svg" width="40" height="40" alt="LOGO" />
+            <img src="Assert/Group.svg" width="40" height="40" alt="LOGO" />
             <p>ABC RESTAURANT</p>
           </div>
           <div class="abc_header_section_right">
-            <img src="Image/trolley.png" width="30" alt="Cart" />
-            <img src="Image/search.png" width="20" alt="Search" />
-            <a href="login.jsp"><button>Become a Member</button></a>
+            <img src="Assert/trolley.png" width="30" alt="Cart" />
+            <img src="Assert/search.png" width="20" alt="Search" />
+            <a href="login.html"><button>Become a Member</button></a>
           </div>
         </div>
         <div class="abc_hero_section">
@@ -50,7 +51,7 @@
             <p></p>
           </div>
           <div class="footer_style_image">
-            <img src="Image/Group.svg" width="70" alt="" srcset="" />
+            <img src="Assert/Group.svg" width="70" alt="" srcset="" />
           </div>
           <div class="footer_style_comp_underline">
             <p></p>
@@ -64,10 +65,12 @@
             <h2>Reserve A Table</h2>
             <p>Discover our Now Menu ! </p>
             <form action="">
-                <div class="f_user_input">
+                <div class="f_user_input container_f_user_input">
                     <input type="text" name="" id="" placeholder="No of Guest">
-                    <input type="date" name="" id="" placeholder="Date">
-                    <input type="time" placeholder="Time">
+                    <div class="date_time_inputes">
+                       <input type="date" name="" id="" placeholder="Date">
+                       <input type="time" placeholder="Time">
+                    </div>
                 </div>
                 <div class="f_user_input">
                     <input type="text" name="" id="" placeholder="NIC">
@@ -89,7 +92,7 @@
               <p></p>
             </div>
             <div class="footer_style_image">
-              <img src="Image/Group.svg" width="70" alt="" srcset="" />
+              <img src="Assert/Group.svg" width="70" alt="" srcset="" />
             </div>
             <div class="footer_style_comp_underline">
               <p></p>
@@ -101,20 +104,44 @@
         <div class="m002">
           <div class="pupular_dish_container">
             <div class="pupular_dish_items">
-                <img src="Image/delicious-fried-chicken-plate.jpg" width="100%" alt="">
+                <img src="Assert/delicious-fried-chicken-plate.jpg" width="100%" alt="">
                 <p>Fried Chicken</p>
+                <p style="color: rgb(141, 144, 144);font-weight: 100;font-size: 1rem;">Description of the item</p>
+                <div class="pupular_dish_items_footer">
+                  <p>$24.00</p>
+                  <p>4.9</p>
+                </div>
+                <button>Order</button>
             </div>
             <div class="pupular_dish_items">
-                <img src="Image/delicious-fried-chicken-plate.jpg" width="100%" alt="">
+                <img src="Assert/delicious-fried-chicken-plate.jpg" width="100%" alt="">
                 <p>Ruti With Chicken</p>
+                <p style="color: rgb(141, 144, 144);font-weight: 100;font-size: 1rem;">Description of the item</p>
+                <div class="pupular_dish_items_footer">
+                  <p>$24.00</p>
+                  <p>4.9</p>
+                </div>
+                <button>Order</button>
             </div>
             <div class="pupular_dish_items">
-                <img src="Image/delicious-fried-chicken-plate.jpg" width="100%" alt="">
+                <img src="Assert/indian-delicious-food-view.jpg" width="100%" height="60%" alt="">
                 <p>Whopper Burger King</p>
+                <p style="color: rgb(141, 144, 144);font-weight: 100;font-size: 1rem;">Description of the item</p>
+                <div class="pupular_dish_items_footer">
+                  <p>$24.00</p>
+                  <p>4.9</p>
+                </div>
+                <button>Order</button>
             </div>
             <div class="pupular_dish_items">
-                <img src="Image/delicious-fried-chicken-plate.jpg" width="100%" alt="">
+                <img src="Assert/sadj-iron-pot-with-various-salads.jpg" width="100%" height="60%" alt="">
                 <p>Chinese Pasta</p>
+                <p style="color: rgb(141, 144, 144);font-weight: 100;font-size: 1rem;">Description of the item</p>
+                <div class="pupular_dish_items_footer">
+                  <p>$24.00</p>
+                  <p>4.9</p>
+                </div>
+                <button>Order</button>
             </div>
           </div>
           <div class="second_section_card_view_services_button">
@@ -130,7 +157,7 @@
             <p></p>
           </div>
           <div class="footer_style_image">
-            <img src="Image/Group.svg" width="70" alt="" srcset="" />
+            <img src="Assert/Group.svg" width="70" alt="" srcset="" />
           </div>
           <div class="footer_style_comp_underline">
             <p></p>
@@ -147,14 +174,27 @@
         <div class="second_section_card_view_services_main_wrapper">
           <div class="second_section_card_view_services_wraper_one">
             <div
-              class="second_section_card_view_services_main_wrapper_item_one"
-            ></div>
+              class="second_section_card_view_services_main_wrapper_item_one services_compo"
+            >
+              <div class="services_img1"></div>
+              <h3>Fast Delivery</h3>
+              <p>Our service ensures swift delivery, ensuring your orders reach you promptly.</p>
+            </div>
             <div
-              class="second_section_card_view_services_main_wrapper_item_two"
-            ></div>
+              class="second_section_card_view_services_main_wrapper_item_two  services_compo"
+            >
+            <div class="services_img2"></div>
+            <h3>Easy To Order</h3>
+            <p>Seamless Ordering: Simple, Quick, and Hassle-Free.</p>
+            </div>
             <div
-              class="second_section_card_view_services_main_wrapper_item_three"
-            ></div>
+              class="second_section_card_view_services_main_wrapper_item_three services_compo" 
+            >
+            <div class="services_img3"></div>
+            <h3>Quality Food</h3>
+            <p>Our website ensures top-notch quality in every dish we serve.</p>
+            </div>
+            </div>
           </div>
         </div>
       </div>
@@ -193,9 +233,7 @@
                 love them.
               </p>
               <div class="next_privew_btn_component">
-                <img src="Images/back.png" width="30" alt="" />
-
-                <img src="Images/next.png" width="27" alt="" />
+                <button>Previous</button><button>Next</button>
               </div>
             </div>
             <div class="what_pepole_say_abouth_main_right_component">
@@ -226,12 +264,13 @@
           <p></p>
         </div>
         <div class="footer_style_image">
-          <img src="Image/Group.svg" width="70" alt="" srcset="" />
+          <img src="Assert/Group.svg" width="70" alt="" srcset="" />
         </div>
         <div class="footer_style_comp_underline">
           <p></p>
         </div>
       </div>
+      <h2 style="color: white;font-weight: bold;text-align: center;font-size: 2.2rem;">Contact Info</h2>
       <!-- Custom Style Component. -->
       <div class="five_section_main_wrapper">
         <div class="contact_us_component">
@@ -240,41 +279,41 @@
             <div class="contact_main_div_left_wrapper">
               <h2>Contact Info</h2>
               <div class="left_sub_item">
-                <img src="Image/phone-call.png" width="30" height="30" alt="" />
+                <img src="Assert/phone-call.png" width="30" height="30" alt="" />
                 <p>+94719208046</p>
               </div>
               <div class="left_sub_item">
-                <img src="Image/email.png" width="30" height="30" alt="" />
+                <img src="Assert/email.png" width="30" height="30" alt="" />
                 <p>abcresturent@gmail.com</p>
               </div>
               <div class="left_sub_item">
-                <img src="Image/location.png" width="30" height="30" alt="" />
+                <img src="Assert/location.png" width="30" height="30" alt="" />
                 <p>339/2 Parkstreet / Colombo 7</p>
               </div>
               <div class="contact_social_m_icon">
                 <img
-                  src="Image/social-media1.png"
+                  src="Assert/social-media1.png"
                   width="30"
                   height="30"
                   alt=""
                   srcset=""
                 />
                 <img
-                  src="Image/social3.png"
+                  src="Assert/social3.png"
                   width="30"
                   height="30"
                   alt=""
                   srcset=""
                 />
                 <img
-                  src="Image/social2.png"
+                  src="Assert/social2.png"
                   width="30"
                   height="30"
                   alt=""
                   srcset=""
                 />
                 <img
-                  src="Image/youtube.png"
+                  src="Assert/youtube.png"
                   width="30"
                   height="30"
                   alt=""
@@ -311,7 +350,7 @@
           <div class="our_team_items">
             <div class="our_team_items_profile_photo">
               <img
-                src="Image/chef1.png.png"
+                src="Assert/chef1.png.png"
                 width="280"
                 height="280"
                 alt=""
@@ -327,7 +366,7 @@
           <div class="our_team_items">
             <div class="our_team_items_profile_photo">
               <img
-                src="Image/chef2.png.png"
+                src="Assert/chef2.png.png"
                 width="280"
                 height="280"
                 alt=""
@@ -343,7 +382,7 @@
           <div class="our_team_items">
             <div class="our_team_items_profile_photo">
               <img
-                src="Image/chef3-1.png.png"
+                src="Assert/chef3-1.png.png"
                 width="280"
                 height="280"
                 alt=""
@@ -369,7 +408,7 @@
         <div class="footer_header">
           <div class="footer_header_left"></div>
           <div class="footer_header_middle">
-            <img src="Image/Group.svg" width="60" alt="" srcset="" />
+            <img src="Assert/Group.svg" width="60" alt="" srcset="" />
             <h2>ABC RESTURENT</h2>
           </div>
           <div class="footer_header_right"></div>
@@ -407,7 +446,6 @@
         <p id="copyright">
           Copyright - abcresturent 2024 | Designed by Nipun Sandeepa
         </p>
-      </div>
     </div>
 </body>
 </html>

@@ -12,10 +12,10 @@
         <div class="hundred_percentage_view_fix">
             <div class="abc_header_section">
                 <div class="abc_header_section_left">
-                    <a href="">Welcome</a>
-                    <a href="">Product</a>
-                    <a href="">Our Menu</a>
-                    <a href="">Offer</a>
+                   <a href="index.jsp">Overview</a>
+            <a href="gallery.jsp">Gallery</a>
+            <a href="offer.jsp">Offers</a>
+            <a href="facilities">Facilities</a>
                 </div>
                 <div class="abc_header_section_middle">
                     <img src="Assert/Group.svg" width="40" height="40" alt="LOGO" />

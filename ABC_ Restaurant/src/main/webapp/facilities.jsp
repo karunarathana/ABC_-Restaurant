@@ -12,10 +12,10 @@
         <div class="header_navigation_bar">
             <div class="abc_header_section">
                 <div class="abc_header_section_left">
-                  <a href="index.html">Overview</a>
-                  <a href="">Gallery</a>
-                  <a href="offer.html">Offers</a>
-                  <a href="">Facilities</a>
+                  <a href="index.jsp">Overview</a>
+            <a href="gallery.jsp">Gallery</a>
+            <a href="offer.jsp">Offers</a>
+            <a href="facilities">Facilities</a>
                 </div>
                 <div class="abc_header_section_middle">
                   <img src="Assert/Group.svg" width="40" height="40" alt="LOGO" />

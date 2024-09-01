@@ -1,9 +1,9 @@
 @charset "UTF-8";
+@charset "UTF-8";
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:yellow;
 }
 h2{
     margin-bottom: 10px;
@@ -23,7 +23,7 @@ h2{
 .main_wrapper_login_interface_c1{
     display: flex;
     flex-direction: column;
-    min-width: 20em;
+    min-width: 25em;
     min-height: 89%;
     max-height: 89%;
     padding: 10px;

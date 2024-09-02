@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *{
     margin: 0;
     padding: 0;
@@ -474,7 +475,7 @@ This is five section styleing */
     justify-content: center;
     align-items: center;
     padding: 20px 0 20px 0;
-    height: 22em;
+    height: 28.5em;
     background-color: rgb(199, 199, 199);
     background: url("../Assert/Section\ \(1\).png");
     background-repeat: no-repeat;
@@ -506,6 +507,10 @@ This is five section styleing */
     border: none;
     border-radius: 5px;
     padding-left: 10px;
+    outline: none;
+}
+.f_user_input input:focus{
+    border: 2px solid rgb(57, 192, 250);
 }
 .r_submit_btn{
     margin-top: 20px;
@@ -520,6 +525,7 @@ This is five section styleing */
     font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 /* This end company story main wrapper */
@@ -745,6 +751,7 @@ This is five section styleing */
     height: 2.5em;
     border-radius: 100px;
     border: 1px solid rgb(246, 87, 38);
+    background: url("../Assert/Broker/WhatsApp\ Image\ 2023-10-31\ at\ 07.47.43_6ad4ee28.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -845,4 +852,17 @@ This is five section styleing */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+.select_branch select{
+    padding-left: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 3em;
+    background-color: #f3eded;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.select_branch select:focus{
+    border: 2px solid rgb(57, 192, 250);
 }

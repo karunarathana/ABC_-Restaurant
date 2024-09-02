@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>ABC-Restaurent</title>
-<link rel="stylesheet" href="CSS/index.css">
+<link rel="stylesheet" href="CSS/newIndex.css">
 </head>
 <body>
 	
@@ -64,18 +64,31 @@
         <div class="container">
             <h2>Reserve A Table</h2>
             <p>Discover our Now Menu ! </p>
-            <form action="">
+            <form action="addReservation" method="post">
+            	<div class="select_branch">
+                     <select name="btype" id="user">
+                      	<option value="error404">Please Select Branch</option>
+	                     <option value="Kurunegala">Kurunegala</option>
+	                     <option value="Polpithigama">Polpithigama</option>
+	                     <option value="Ibbagamuwa">Ibbagamuwa</option>
+	                     <option value="Puttalam">Puttalam</option>
+	                     <option value="Jaffna">Jaffna</option>
+	                     <option value="Colombo">Colombo</option>
+	                     <option value="Galle">Galle</option>
+	                     <option value="Baththaramulla">Baththaramulla</option>
+                     </select>
+                </div>
                 <div class="f_user_input container_f_user_input">
-                    <input type="text" name="" id="" placeholder="No of Guest">
+                    <input type="number" name="nog" id="" placeholder="No of Guest">
                     <div class="date_time_inputes">
-                       <input type="date" name="" id="" placeholder="Date">
-                       <input type="time" placeholder="Time">
+                       <input type="date" name="rdate" id="" placeholder="Date">
+                       <input type="time" name="rtime" placeholder="Time">
                     </div>
                 </div>
                 <div class="f_user_input">
-                    <input type="text" name="" id="" placeholder="NIC">
-                    <input type="text" name="" id="" placeholder="Full Name">
-                    <input type="text" placeholder="Phone Number">
+                    <input type="text" name="nic" id="" placeholder="NIC">
+                    <input type="text" name="fname" id="" placeholder="Full Name">
+                    <input type="text" name="tel" placeholder="Phone Number">
                 </div>
                 <div class="r_submit_btn">
                     <input id="r_sub_btn" type="submit">

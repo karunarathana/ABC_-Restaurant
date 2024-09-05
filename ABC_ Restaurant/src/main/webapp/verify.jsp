@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="CSS/forgot.css">
+<link rel="stylesheet" href="CSS/frogotTest.css">
 </head>
 <body>
  <div class="main_wrapper_login_page">
@@ -26,7 +26,7 @@
             </div>
             <span id="m02_free_space"></span>
             <div class="login_btn_user_inputbtn_c025">
-                <button><a href="newpassword.jsp">Check OTP</a></button>
+                <button type="submit"><a href="newpassword.jsp">Verify</a></button>
             </div>
             <div class="style_sologo_text_c035">
                 <div class="item"></div>
@@ -37,13 +37,13 @@
             <div class="login_interface_c1_user_clickable_btn">
                 <button type="button">
                     <div class="google_btn_m02">
-                        <img src="../assert/google.png" width="20" height="20" alt="" srcset="">
+                        <img src="Assert/google.png" width="20" height="20" alt="" srcset="">
                         <p>Log in with Google</p>
                     </div>
                 </button>
                 <button type="button">
                     <div class="apple_btn_m02">
-                        <img src="../assert/apple-logo.png" width="20" height="20" alt="" srcset="">
+                        <img src="Assert/apple-logo.png" width="20" height="20" alt="" srcset="">
                         <p>Log in with Apple</p>
                     </div>
                 </button>

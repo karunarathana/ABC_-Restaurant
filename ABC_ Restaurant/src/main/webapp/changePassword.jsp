@@ -11,18 +11,14 @@
 <div class="main_wrapper_login_page">
         <div class="main_wrapper_login_interface_c1">
             <h2>New Password!</h2>
-            <div class="new_password_Image">
-                <img src="Assert/Secure login-pana.svg" width="100%" height="100%">
-            </div>
-            <div class="newpassword_interface_c1_user_details_block_const">
-                <input type="text" placeholder="Enter New Password">
-                <input type="text" placeholder="Confirm Passowrd">
+            <div  class="new_password_Image">
+                <img src="Assert/hurry_up.png" width="100%" height="100%">
             </div>
             <div class="login_interface_c1_user_froget_password_link" >
                 <!-- <a href="">Froget Password?</a> -->
             </div>
             <div class="update_btn_user_inputbtn_c025">
-                <button type="submit"><a style="text-decoration: none;color: white" href="changePassword.jsp">Update</a></button>
+                <button type="submit"><a style="text-decoration: none;color: white; margin-top: 70px" href="login.jsp">Ok</a></button>
             </div>
             <!-- <div class="style_sologo_text_c035">
                 <div class="item"></div>

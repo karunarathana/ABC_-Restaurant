@@ -866,3 +866,93 @@ This is five section styleing */
 .select_branch select:focus{
     border: 2px solid rgb(57, 192, 250);
 }
+
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Popup content */
+.popup-content {
+    position: relative;
+    margin: 10% auto;
+    max-width: 40em;
+    padding: 20px;
+    width: 80%;
+    height: 30em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+#border_compo{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+}
+.pay_comp{
+    margin-top: 10px;
+}
+.type_select_comp{
+    margin-top: 10px;
+}
+.radio_comp{
+    margin-left: 8px;
+}
+.pay_image_comp{
+    margin-top: 10px;
+}
+.pay_user_input_comp{
+    margin-top: 10px;
+}
+.pay_user_input_comp input{
+    margin-top: 10px;
+    height: 2.5em;
+    width: 70%;
+}
+.special_user_compo{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.special_user_compo input{
+    margin-top: 5px;
+    height: 2.5em;
+    width: 90%;
+}
+.pay_btn{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.pay_btn button{
+    width: 80%;
+    height: 2.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(16, 195, 40);
+}

@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>ABC-Restaurent</title>
 <link rel="stylesheet" href="CSS/newIndex.css">
+<script defer src="index.js"></script>
 </head>
 <body>
 	
@@ -25,7 +26,7 @@
           <div class="abc_header_section_right">
             <img src="Assert/trolley.png" width="30" alt="Cart" />
             <img src="Assert/search.png" width="20" alt="Search" />
-            <a href="login.html"><button>Become a Member</button></a>
+            <a href="login.jsp"><button>Become a Member</button></a>
           </div>
         </div>
         <div class="abc_hero_section">
@@ -91,7 +92,7 @@
                     <input type="text" name="tel" placeholder="Phone Number">
                 </div>
                 <div class="r_submit_btn">
-                    <input id="r_sub_btn" type="submit">
+                    <input id="popupBtn" type="submit">
                 </div>
             </form>
         </div>
@@ -459,6 +460,43 @@
         <p id="copyright">
           Copyright - abcresturent 2024 | Designed by Nipun Sandeepa
         </p>
+    </div>
+    <!-- Popup Container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h3>Payment</h3>
+            <p id="border_compo"></p>
+            <p class="pay_comp">Pay with</p>
+            <div class="type_select_comp">
+                <input type="radio" name="tpeselect"><span class="radio_comp">Card</span>
+                <input type="radio" name="tpeselect"><span class="radio_comp">Bank Transfer</span>
+                <input type="radio" name="tpeselect"><span class="radio_comp">Cryptocurrency</span>
+            </div>
+            <div class="pay_image_comp">
+                <img src="Image/Version=Logo (1).jpg" width="50px" alt="master">
+                <img src="Image/Version=Logo.jpg" alt="visa" width="50px">
+            </div>
+            <div class="pay_user_input_comp">
+                <label for="">Card Number</label><br>
+                <input type="text" placeholder="1111 2222 3333 4444">
+            </div>
+            <div class="special_user_compo">
+                <div class="special_user_compo_labl">
+                    <label for="">Expiration Date</label><br>
+                    <input type="text" placeholder="MM/YY">
+                </div>
+                <div  class="special_user_compo_labl">
+                    <label for="">CVV</label><br>
+                    <input type="text" placeholder="113">
+                </div>
+            </div>
+            <input type="checkbox" name="" id=""><span>Save card details</span>
+            <div class="pay_btn">
+                <button>Pay USD 250.00</button>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At veniam minus vitae harum doloremque possimus dolores mollitia sed facilis neque quaerat eaque, officia fuga voluptate minima omnis nihil explicabo maiores.</p>
+        </div>
     </div>
 </body>
 </html>

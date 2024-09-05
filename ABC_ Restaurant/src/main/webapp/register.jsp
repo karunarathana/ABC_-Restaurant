@@ -44,20 +44,24 @@
                                		<option value="plsselect">Please Select User Type</option>
                                     <option value="customer">Customer</option>
                                 </select>
+                                <p id="e_type" class="user_input_error_handel" style="color: red;font-size: 0.8rem;margin-top:2px">*Please choose type</p>
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Email Address</label>
                                 <input id="uEmail" name="email" type="text" placeholder="sandeepa@gmail.com">
+                                <p id="e_email" class="user_input_error_handel" style="color: red;font-size: 0.8rem;margin-top:2px">*Please enter email</p>
                             </div>
                             <div class="user_input_tems">
                                 <label for="">Phone Number</label>
                                 <input id="utel" name="tel" type="text" placeholder="+94">
+                                 <p id="e_tel" class="user_input_error_handel" style="color: red;font-size: 0.8rem;margin-top:2px">*please enter phone number</p>
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Password</label>
                                 <input id="uPass" name="pass" type="password" placeholder="Your Password">
+                                 <p id="e_pass" class="user_input_error_handel" style="color: red;font-size: 0.8rem;margin-top:2px">*please enter password</p>
                             </div>
                             <div class="user_check_box">
                                 <input name="agree" type="checkbox">
@@ -135,46 +139,30 @@
     	let result = null;
    	 	let message = document.getElementById("Response").value;
    	 	
-   		// Get the popup element
-   	 	var popup = document.getElementById("popup");
-
-   	 	// Get the button that opens the popup
-   	 	var popupBtn = document.getElementById("popupBtn");
-
-   	 	// Get the <span> element that closes the popup
-   	 	var closeBtn = document.getElementsByClassName("close")[0];
-
-   		 // When the user clicks the button, open the popup
-   		 popupBtn.onclick = function() {
-   	   	  popup.style.display = "block";
-   	 	}
-
-   	 	// When the user clicks on <span> (x), close the popup
-   		 closeBtn.onclick = function() {
-   	     	popup.style.display = "none";
-   		 }
-
-   		 // When the user clicks anywhere outside of the popup, close it
-   		 window.onclick = function(event) {
-   	     	if (event.target == popup) {
-   	     	    popup.style.display = "none";
-   	     	}
-   	 	}
+	 	document.getElementById("e_type").style.display="none";
+	 	document.getElementById("e_email").style.display="none";
+	 	document.getElementById("e_pass").style.display="none";
+	 	document.getElementById("e_tel").style.display="none";
+	 	
 
    	 	
    	 	
    		if(!message.length == 0){
 	 		if(message.includes("User type is required.")){
 	 			document.getElementById("user").style.border = "1px solid red";
+	 			document.getElementById("e_type").style.display="block";
 	 		}
 	 		if(message.includes("phone number is required.")){
 	 			document.getElementById("utel").style.border = "1px solid red";
+	 			document.getElementById("e_tel").style.display="block";
 	 		}
 	 		if(message.includes("Invalid email format.")){
 	 			document.getElementById("uEmail").style.border = "1px solid red";
+	 			document.getElementById("e_email").style.display="block";
 	 		}
 	 		if(message.includes("Password is required.")){
 	 			document.getElementById("uPass").style.border = "1px solid red";
+	 			document.getElementById("e_pass").style.display="block";
 	 		}
 	 		if(message.includes("Registration Successfully")){
 	 			 popup.style.display = "block";

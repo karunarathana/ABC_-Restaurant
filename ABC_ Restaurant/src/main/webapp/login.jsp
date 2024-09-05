@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
-<link rel="stylesheet" href="CSS/test.css">
+<link rel="stylesheet" href="CSS/login1.css">
 </head>
 <body>
 <input type="hidden" id="loginresponse" value="<%=request.getAttribute("ErrorResponse")%>">
@@ -40,20 +40,24 @@
                             <div class="user_input_tems">
                                 <label for="">Type</label>
                                 <select name="type" id="user">
+                                	<option value="plsselect">Please Select User type</option>
                                     <option value="customer">Customer</option>
                                     <option value="admin">Admin</option>
                                     <option value="branch">Branch</option>
                                 </select>
+                                 <p id="e_type" class="user_input_error_handel" style="color: red;font-size: 0.8rem;margin-top:2px">*Please choose type</p>
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Email</label>
                                 <input id="uEmail" name="email" type="text" placeholder="sandeepa@gmail.com">
+                                <p id="e_email" class="user_input_error_handel" style="color: red;font-size: 0.8rem;margin-top:2px">*Please enter email</p>
                             </div>
 
                             <div class="user_input_tems">
                                 <label for="">Password</label>
                                 <input id="uPass" name="pass" type="password" placeholder="Your Password">
+                                <p id="e_pass" class="user_input_error_handel" style="color: red;font-size: 0.8rem;margin-top:2px">*please enter password</p>
                             </div>
 
                             <div class="user_input_tems redirect_loging_page">
@@ -141,20 +145,27 @@
     </div>
     <script>
 	 	let message = document.getElementById("loginresponse").value;
-
+	 	
+	 	document.getElementById("e_type").style.display="none";
+	 	document.getElementById("e_email").style.display="none";
+	 	document.getElementById("e_pass").style.display="none";
+	 	
 	 	console.log("out put"+message);
 		if(!message.length == 0){
  		if(message.includes(" User type is required.")){
  			document.getElementById("user").style.border = "1px solid red";
+ 			document.getElementById("e_type").style.display="block";
  		}
  		if(message.includes(" Invalid email format.")){
  			document.getElementById("uEmail").style.border = "1px solid red";
+ 			document.getElementById("e_email").style.display="block";
  		}
  		if(message.includes(" Password is required.")){
  			document.getElementById("uPass").style.border = "1px solid red";
+ 			document.getElementById("e_pass").style.display="block";
  		}
  		if(message.includes("Login SuccessFully")){
-			console.log("Login Success")
+			alert("Login Success")
  		}
  	}
     </script>
